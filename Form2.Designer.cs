@@ -96,6 +96,7 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Checked = false;
             this.dateTimePicker1.Location = new System.Drawing.Point(263, 64);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(144, 20);
@@ -104,6 +105,11 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Java",
+            "Python",
+            "C#",
+            "C++"});
             this.comboBox1.Location = new System.Drawing.Point(263, 94);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(144, 21);
@@ -135,12 +141,13 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(35, 210);
+            this.button2.Location = new System.Drawing.Point(35, 221);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(137, 31);
             this.button2.TabIndex = 11;
             this.button2.Text = "Очистить";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form2
             // 
